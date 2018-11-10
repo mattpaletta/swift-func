@@ -131,43 +131,22 @@ func card_value(c: card) -> Int {
     }
 }
 
-
-extension Array {
-    var head: Element? {
-        return self.first
-    }
-    
-    var tail: Array<Element> {
-        return Array(self.dropFirst())
-    }
-}
-
-
 func remove_card(_ cs: [card], c: card, e: MyError) -> [card] {
-    guard let head = cs.first else { return [] }
-    let tail = Array(cs.dropFirst())
-    
-    if head == c {
+    switch cs.match {
+    case (.none, _):
+        return []
+    case let (.some(head), tail) where head == c:
         return tail
-    } else {
+    case let (.some(head), tail):
         return [head] + remove_card(tail, c: c, e: e)
     }
 }
 
 func all_same_colour(_ cs: [card]) -> Bool {
     func aux(_ c: color, cs2: [card]) -> Bool {
-        if cs2.count == 0 {
-            return true
-        } else {
-            return card_color(c: cs2.head!) == c && aux(c, cs2: cs2.tail)
-        }
+        return cs2.count == 0 ? true : card_color(c: cs2.head!) == c && aux(c, cs2: cs2.tail)
     }
-    
-    if cs.count == 0 {
-        return true
-    } else {
-        return aux(card_color(c: cs.first!), cs2: cs)
-    }
+    return cs.count == 0 ? true : aux(card_color(c: cs.head!), cs2: cs)
 }
 
 
@@ -185,7 +164,6 @@ func sum_cards(_ cs: [card]) -> Int {
 func score(_ cs: [card], goal: Int) -> Int {
     let sum = sum_cards(cs)
     let preliminary = sum > goal ? (sum - goal) * 2 : (goal - sum)
-    
     return  all_same_colour(cs) ? preliminary / 2 : preliminary
 }
 

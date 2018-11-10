@@ -13,6 +13,11 @@
 		3416CB5A21965F850007F14D /* hw2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416CB5721965F850007F14D /* hw2.swift */; };
 		3416CB5B21965F850007F14D /* hw2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416CB5721965F850007F14D /* hw2.swift */; };
 		3416CB5D21966DE80007F14D /* hw2test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416CB5C21966DE80007F14D /* hw2test.swift */; };
+		3416CB5F219692B80007F14D /* hw3test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416CB5E219692B80007F14D /* hw3test.swift */; };
+		3416CB61219693280007F14D /* hw3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416CB60219693280007F14D /* hw3.swift */; };
+		3416CB62219693280007F14D /* hw3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416CB60219693280007F14D /* hw3.swift */; };
+		345F400D219746B7008A0F76 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F400C219746B7008A0F76 /* extensions.swift */; };
+		345F400E219746B7008A0F76 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345F400C219746B7008A0F76 /* extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +41,9 @@
 		3416CB5621965F850007F14D /* hw1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = hw1.swift; path = ../../hw1.swift; sourceTree = "<group>"; };
 		3416CB5721965F850007F14D /* hw2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = hw2.swift; path = ../../hw2.swift; sourceTree = "<group>"; };
 		3416CB5C21966DE80007F14D /* hw2test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw2test.swift; sourceTree = "<group>"; };
+		3416CB5E219692B80007F14D /* hw3test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hw3test.swift; sourceTree = "<group>"; };
+		3416CB60219693280007F14D /* hw3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = hw3.swift; path = ../../hw3.swift; sourceTree = "<group>"; };
+		345F400C219746B7008A0F76 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 				3416CB5621965F850007F14D /* hw1.swift */,
 				3416CB5721965F850007F14D /* hw2.swift */,
 				3416CB5521965F850007F14D /* swift-func-Bridging-Header.h */,
+				3416CB60219693280007F14D /* hw3.swift */,
+				345F400C219746B7008A0F76 /* extensions.swift */,
 			);
 			path = "swift-func";
 			sourceTree = "<group>";
@@ -90,6 +100,7 @@
 				3416CB4F21965F330007F14D /* hw1test.swift */,
 				3416CB5121965F330007F14D /* Info.plist */,
 				3416CB5C21966DE80007F14D /* hw2test.swift */,
+				3416CB5E219692B80007F14D /* hw3test.swift */,
 			);
 			path = testing;
 			sourceTree = "<group>";
@@ -184,7 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3416CB5821965F850007F14D /* hw1.swift in Sources */,
+				3416CB61219693280007F14D /* hw3.swift in Sources */,
 				3416CB5A21965F850007F14D /* hw2.swift in Sources */,
+				345F400D219746B7008A0F76 /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3416CB5921965F850007F14D /* hw1.swift in Sources */,
+				3416CB5F219692B80007F14D /* hw3test.swift in Sources */,
 				3416CB5D21966DE80007F14D /* hw2test.swift in Sources */,
+				345F400E219746B7008A0F76 /* extensions.swift in Sources */,
 				3416CB5B21965F850007F14D /* hw2.swift in Sources */,
+				3416CB62219693280007F14D /* hw3.swift in Sources */,
 				3416CB5021965F330007F14D /* hw1test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
