@@ -8,6 +8,16 @@
 
 import Foundation
 
+import Darwin
+
+precedencegroup Group { associativity: left }
+
+infix operator >>> : Group
+
+func >>> <T, U, V>(left: @escaping (T) -> U, right: @escaping (U) -> V) -> (T) -> V {
+    return { right(left($0)) }
+}
+
 extension Array {
     var head: Element? {
         return self.first
@@ -21,3 +31,5 @@ extension Array {
         return (self.head, self.tail)
     }
 }
+
+
